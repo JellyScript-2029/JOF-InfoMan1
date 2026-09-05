@@ -1,0 +1,5 @@
+# Reflection
+
+Running a standalone MySQL server shows why the database approach is so much better than traditional file-based systems. In old file systems, data lives in separate, scattered files, which creates huge problems with data redundancy and sync errors whenever multiple people try to update things at once. MySQL acts as a central engine that safely handles concurrent access and keeps everything consistent. Taking the time to model entities and relationships in an ERD first ensures our structure makes sense before writing any SQL, avoiding super expensive redesigns later on.
+
+when database starts holding real student data, the most critical DBA responsibility right out of the gate is Security and Access Control. Currently, we are doing everything using the root administrative account. In a real environment, giving everyday applications full root privileges is a massive security risk. A DBA needs to immediately create dedicated user accounts, assign strict permissions, and restrict access so people can only see what they need to. Setting up these security controls right away is essential to keeping student records safe.
