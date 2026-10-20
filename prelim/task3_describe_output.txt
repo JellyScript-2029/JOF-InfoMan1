@@ -1,0 +1,90 @@
+-- Real output from running task3_ddl.sql in MySQL.
+-- (last part of the run: SHOW TABLES plus the seven DESCRIBE statements)
+
+mysql> SHOW TABLES;
++----------------------------+
+| Tables_in_toolshare_prelim |
++----------------------------+
+| borrowing                  |
+| certification              |
+| member                     |
+| member_certification       |
+| storage_location           |
+| tool                       |
+| tool_requirement           |
++----------------------------+
+7 rows in set (0.046 sec)
+
+mysql> DESCRIBE member;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| member_id   | int          | NO   | PRI | NULL    |       |
+| member_name | varchar(100) | NO   |     | NULL    |       |
+| phone       | varchar(20)  | YES  |     | NULL    |       |
+| join_date   | date         | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+4 rows in set (0.112 sec)
+
+mysql> DESCRIBE storage_location;
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| location_code | varchar(10)  | NO   | PRI | NULL    |       |
+| description   | varchar(100) | NO   |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+2 rows in set (0.019 sec)
+
+
+mysql> DESCRIBE certification;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| cert_id   | int          | NO   | PRI | NULL    |       |
+| cert_name | varchar(100) | NO   |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+2 rows in set (0.022 sec)
+
+mysql> DESCRIBE tool;
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| tool_id       | int          | NO   | PRI | NULL    |       |
+| tool_name     | varchar(100) | NO   |     | NULL    |       |
+| category      | varchar(50)  | NO   |     | NULL    |       |
+| purchase_date | date         | NO   |     | NULL    |       |
+| location_code | varchar(10)  | NO   | MUL | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+5 rows in set (0.021 sec)
+
+mysql> DESCRIBE borrowing;
++-------------+------+------+-----+---------+-------+
+| Field       | Type | Null | Key | Default | Extra |
++-------------+------+------+-----+---------+-------+
+| borrow_id   | int  | NO   | PRI | NULL    |       |
+| member_id   | int  | NO   | MUL | NULL    |       |
+| tool_id     | int  | NO   | MUL | NULL    |       |
+| borrow_date | date | NO   |     | NULL    |       |
+| return_date | date | YES  |     | NULL    |       |
++-------------+------+------+-----+---------+-------+
+5 rows in set (0.030 sec)
+
+
+mysql> DESCRIBE member_certification;
++-----------------+------+------+-----+---------+-------+
+| Field           | Type | Null | Key | Default | Extra |
++-----------------+------+------+-----+---------+-------+
+| member_id       | int  | NO   | PRI | NULL    |       |
+| cert_id         | int  | NO   | PRI | NULL    |       |
+| completion_date | date | NO   |     | NULL    |       |
++-----------------+------+------+-----+---------+-------+
+3 rows in set (0.019 sec)
+
+mysql> DESCRIBE tool_requirement;
++---------+------+------+-----+---------+-------+
+| Field   | Type | Null | Key | Default | Extra |
++---------+------+------+-----+---------+-------+
+| tool_id | int  | NO   | PRI | NULL    |       |
+| cert_id | int  | NO   | PRI | NULL    |       |
++---------+------+------+-----+---------+-------+
+2 rows in set (0.020 sec)
