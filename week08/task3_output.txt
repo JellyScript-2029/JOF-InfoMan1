@@ -1,0 +1,38 @@
+-- Query 3.1
+SELECT department, COUNT(*) AS headcount, ROUND(AVG(salary), 2) AS avg_salary, COUNT(DISTINCT job_title) AS distinct_titles FROM employee GROUP BY department;
+
++-------------+-----------+------------+-----------------+
+| department  | headcount | avg_salary | distinct_titles |
++-------------+-----------+------------+-----------------+
+| Engineering | 125       | 75160.0    | 3               |
+| Finance     | 69        | 79513.04   | 3               |
+| HR          | 50        | 62610.0    | 3               |
+| Sales       | 144       | 71799.65   | 3               |
+| Support     | 112       | 44028.57   | 3               |
++-------------+-----------+------------+-----------------+
+5 row(s) in set
+
+-- Query 3.2
+SELECT department, job_title, COUNT(*) AS headcount FROM employee GROUP BY department, job_title;
+
++-------------+----------------------+-----------+
+| department  | job_title            | headcount |
++-------------+----------------------+-----------+
+| Engineering | DevOps Engineer      | 42        |
+| Engineering | QA Analyst           | 39        |
+| Engineering | Software Engineer    | 44        |
+| Finance     | Accountant           | 21        |
+| Finance     | Finance Manager      | 24        |
+| Finance     | Financial Analyst    | 24        |
+| HR          | HR Manager           | 18        |
+| HR          | HR Specialist        | 20        |
+| HR          | Recruiter            | 12        |
+| Sales       | Account Manager      | 50        |
+| Sales       | Sales Manager        | 49        |
+| Sales       | Sales Representative | 45        |
+| Support     | Support Agent        | 40        |
+| Support     | Support Lead         | 29        |
+| Support     | Support Specialist   | 43        |
++-------------+----------------------+-----------+
+15 row(s) in set
+
