@@ -1,0 +1,857 @@
+-- Query 1.1
+SELECT emp_id, first_name, last_name FROM employee WHERE last_name LIKE '%ez';
+
++--------+------------+-----------+
+| emp_id | first_name | last_name |
++--------+------------+-----------+
+| 1      | Mario      | Gutierrez |
+| 2      | Rico       | Jimenez   |
+| 16     | Bianca     | Velasquez |
+| 17     | Ana        | Gomez     |
+| 21     | Mavis      | Perez     |
+| 27     | Kevin      | Gomez     |
+| 28     | Felix      | Gomez     |
+| 29     | Gabriel    | Gomez     |
+| 30     | Manuel     | Fernandez |
+| 34     | Anna       | Gonzalez  |
+| 38     | Matthew    | Jimenez   |
+| 39     | Lara       | Ramirez   |
+| 41     | Oscar      | Fernandez |
+| 42     | Karen      | Velasquez |
+| 45     | Mateo      | Gutierrez |
+| 48     | Vanessa    | Gutierrez |
+| 52     | Paolo      | Velasquez |
+| 56     | Emma       | Lopez     |
+| 57     | Karen      | Martinez  |
+| 58     | Grace      | Gonzalez  |
+| 59     | Emma       | Gonzalez  |
+| 61     | Sara       | Fernandez |
+| 63     | Daniel     | Martinez  |
+| 69     | Daniel     | Jimenez   |
+| 77     | Manuel     | Gomez     |
+| 79     | Rafael     | Martinez  |
+| 80     | John       | Gutierrez |
+| 82     | Mae        | Gonzalez  |
+| 84     | Leo        | Velasquez |
+| 86     | Tomas      | Lopez     |
+| 88     | Marco      | Gutierrez |
+| 91     | Helen      | Ramirez   |
+| 96     | Marisol    | Lopez     |
+| 97     | Olivia     | Jimenez   |
+| 101    | Daniel     | Martinez  |
+| 103    | Trisha     | Hernandez |
+| 106    | Nathan     | Gonzalez  |
+| 107    | Leo        | Gutierrez |
+| 108    | Emma       | Perez     |
+| 110    | Oscar      | Perez     |
+| 112    | Dennis     | Hernandez |
+| 114    | Ivan       | Gonzalez  |
+| 118    | Lucia      | Velasquez |
+| 124    | John       | Gonzalez  |
+| 131    | Lara       | Perez     |
+| 137    | Marisol    | Sanchez   |
+| 142    | Kevin      | Hernandez |
+| 143    | Dennis     | Perez     |
+| 150    | Yna        | Velasquez |
+| 151    | Sofia      | Gonzalez  |
+| 153    | Marlon     | Velasquez |
+| 154    | Lara       | Perez     |
+| 157    | Rafael     | Gutierrez |
+| 160    | Walter     | Perez     |
+| 168    | Oscar      | Gutierrez |
+| 169    | Jose       | Hernandez |
+| 173    | Hannah     | Lopez     |
+| 174    | Mae        | Fernandez |
+| 186    | Daniel     | Jimenez   |
+| 190    | Liam       | Perez     |
+| 194    | Jose       | Ramirez   |
+| 202    | Nathan     | Alvarez   |
+| 204    | Mateo      | Lopez     |
+| 207    | Manuel     | Gomez     |
+| 208    | Mario      | Gutierrez |
+| 212    | Marisol    | Rodriguez |
+| 213    | Yna        | Rodriguez |
+| 216    | Carmen     | Martinez  |
+| 218    | Ivan       | Perez     |
+| 219    | Isabel     | Gomez     |
+| 221    | Leo        | Ramirez   |
+| 222    | Helen      | Gonzalez  |
+| 224    | Mateo      | Jimenez   |
+| 225    | Walter     | Lopez     |
+| 231    | Walter     | Gutierrez |
+| 237    | Hannah     | Fernandez |
+| 238    | Lara       | Sanchez   |
+| 243    | Jacob      | Gonzalez  |
+| 244    | Diego      | Ramirez   |
+| 249    | Daniel     | Gomez     |
+| 250    | Liam       | Hernandez |
+| 251    | Carmen     | Lopez     |
+| 255    | Karen      | Lopez     |
+| 262    | Ivan       | Ramirez   |
+| 265    | Oscar      | Rodriguez |
+| 266    | Marcus     | Sanchez   |
+| 268    | Manuel     | Gutierrez |
+| 276    | Lara       | Alvarez   |
+| 277    | Walter     | Rodriguez |
+| 284    | Karen      | Sanchez   |
+| 286    | Noel       | Gonzalez  |
+| 288    | Jose       | Fernandez |
+| 293    | Rafael     | Fernandez |
+| 299    | Noel       | Gutierrez |
+| 305    | Grace      | Fernandez |
+| 307    | Mae        | Gutierrez |
+| 310    | Jacob      | Martinez  |
+| 311    | Liam       | Hernandez |
+| 316    | Olivia     | Gomez     |
+| 318    | Noel       | Fernandez |
+| 319    | Hannah     | Ramirez   |
+| 326    | Liam       | Jimenez   |
+| 327    | John       | Gomez     |
+| 330    | Victor     | Gutierrez |
+| 335    | Manuel     | Lopez     |
+| 336    | Hannah     | Gutierrez |
+| 337    | Paolo      | Lopez     |
+| 344    | Hannah     | Velasquez |
+| 345    | Carmen     | Hernandez |
+| 349    | Maria      | Hernandez |
+| 351    | Ana        | Gonzalez  |
+| 352    | Patricia   | Martinez  |
+| 356    | Mae        | Ramirez   |
+| 358    | Tomas      | Gutierrez |
+| 361    | Jose       | Alvarez   |
+| 366    | Victor     | Ramirez   |
+| 367    | Elena      | Gonzalez  |
+| 369    | Ivan       | Velasquez |
+| 372    | Dennis     | Martinez  |
+| 375    | Sara       | Perez     |
+| 376    | John       | Fernandez |
+| 383    | Vanessa    | Fernandez |
+| 388    | Lucia      | Gonzalez  |
+| 389    | Trisha     | Hernandez |
+| 391    | Nathan     | Fernandez |
+| 397    | Carmen     | Rodriguez |
+| 398    | Manuel     | Perez     |
+| 401    | Anna       | Gonzalez  |
+| 409    | Tomas      | Lopez     |
+| 417    | Manuel     | Ramirez   |
+| 420    | Helen      | Gomez     |
+| 421    | Daniel     | Lopez     |
+| 426    | Yna        | Hernandez |
+| 427    | Sofia      | Jimenez   |
+| 428    | Victor     | Rodriguez |
+| 430    | Ana        | Hernandez |
+| 433    | Paolo      | Rodriguez |
+| 437    | Maria      | Jimenez   |
+| 444    | Tomas      | Hernandez |
+| 446    | Maricel    | Lopez     |
+| 451    | Sara       | Hernandez |
+| 453    | Ana        | Sanchez   |
+| 459    | Rafael     | Lopez     |
+| 460    | Zack       | Sanchez   |
+| 463    | Grace      | Rodriguez |
+| 466    | Victor     | Sanchez   |
+| 474    | Liam       | Sanchez   |
+| 476    | Nina       | Lopez     |
+| 478    | Manuel     | Gonzalez  |
+| 481    | Olivia     | Perez     |
+| 482    | Elena      | Gutierrez |
+| 483    | Patricia   | Perez     |
+| 484    | Matthew    | Gutierrez |
+| 486    | Maria      | Rodriguez |
+| 489    | Rosa       | Martinez  |
+| 491    | Isabel     | Velasquez |
+| 493    | Samuel     | Jimenez   |
+| 495    | Trisha     | Gonzalez  |
+| 496    | Zack       | Martinez  |
+| 497    | Mario      | Sanchez   |
+| 500    | Jose       | Martinez  |
++--------+------------+-----------+
+161 row(s) in set
+
+-- Query 1.2
+SELECT emp_id, first_name, department FROM employee WHERE first_name LIKE 'Ma%';
+
++--------+------------+-------------+
+| emp_id | first_name | department  |
++--------+------------+-------------+
+| 1      | Mario      | Sales       |
+| 3      | Mavis      | Sales       |
+| 5      | Manuel     | Sales       |
+| 7      | Marlon     | Engineering |
+| 13     | Marisol    | Finance     |
+| 20     | Mae        | HR          |
+| 21     | Mavis      | Support     |
+| 22     | Mavis      | Finance     |
+| 23     | Mario      | Sales       |
+| 24     | Marlon     | Support     |
+| 30     | Manuel     | Engineering |
+| 31     | Marlon     | Engineering |
+| 38     | Matthew    | Engineering |
+| 43     | Mae        | Engineering |
+| 45     | Mateo      | HR          |
+| 46     | Maria      | Support     |
+| 62     | Matthew    | Engineering |
+| 65     | Mateo      | Engineering |
+| 68     | Maricel    | Finance     |
+| 70     | Marco      | Sales       |
+| 76     | Matthew    | Engineering |
+| 77     | Manuel     | Engineering |
+| 78     | Maricel    | HR          |
+| 81     | Marlon     | Engineering |
+| 82     | Mae        | Support     |
+| 88     | Marco      | Support     |
+| 96     | Marisol    | Support     |
+| 99     | Mateo      | Engineering |
+| 102    | Mateo      | Support     |
+| 115    | Mario      | Support     |
+| 122    | Manuel     | Sales       |
+| 127    | Mavis      | Finance     |
+| 128    | Marco      | Finance     |
+| 136    | Mae        | Support     |
+| 137    | Marisol    | Support     |
+| 138    | Marco      | Support     |
+| 140    | Mavis      | Sales       |
+| 147    | Manuel     | Support     |
+| 153    | Marlon     | Finance     |
+| 159    | Mavis      | Finance     |
+| 167    | Matthew    | Support     |
+| 171    | Marcus     | Support     |
+| 174    | Mae        | Engineering |
+| 176    | Matthew    | Engineering |
+| 180    | Mario      | Engineering |
+| 184    | Mario      | Engineering |
+| 189    | Maria      | Support     |
+| 192    | Marlon     | HR          |
+| 195    | Marcus     | Support     |
+| 199    | Marcus     | HR          |
+| 200    | Marcus     | Engineering |
+| 201    | Marlon     | Finance     |
+| 204    | Mateo      | Engineering |
+| 206    | Mario      | HR          |
+| 207    | Manuel     | Sales       |
+| 208    | Mario      | Support     |
+| 212    | Marisol    | Engineering |
+| 224    | Mateo      | Support     |
+| 239    | Mateo      | Engineering |
+| 246    | Matthew    | Sales       |
+| 247    | Manuel     | Support     |
+| 252    | Mae        | Sales       |
+| 266    | Marcus     | Finance     |
+| 268    | Manuel     | Sales       |
+| 271    | Matthew    | Engineering |
+| 273    | Maricel    | Engineering |
+| 274    | Maricel    | Sales       |
+| 278    | Marcus     | Sales       |
+| 287    | Mavis      | Support     |
+| 306    | Mario      | Engineering |
+| 307    | Mae        | Sales       |
+| 312    | Manuel     | Engineering |
+| 315    | Mateo      | Sales       |
+| 317    | Mae        | Support     |
+| 333    | Manuel     | Engineering |
+| 335    | Manuel     | Engineering |
+| 338    | Mario      | HR          |
+| 342    | Mario      | Sales       |
+| 347    | Maricel    | Finance     |
+| 349    | Maria      | Engineering |
+| 354    | Mavis      | Support     |
+| 356    | Mae        | Sales       |
+| 370    | Mae        | Finance     |
+| 390    | Marco      | Finance     |
+| 393    | Marcus     | Support     |
+| 398    | Manuel     | HR          |
+| 405    | Marcus     | Support     |
+| 412    | Marcus     | Engineering |
+| 413    | Matthew    | Support     |
+| 414    | Marco      | Sales       |
+| 416    | Maria      | HR          |
+| 417    | Manuel     | Engineering |
+| 431    | Marlon     | Support     |
+| 437    | Maria      | Engineering |
+| 440    | Mavis      | Sales       |
+| 441    | Marisol    | Finance     |
+| 442    | Marco      | Sales       |
+| 443    | Mae        | Sales       |
+| 446    | Maricel    | Sales       |
+| 450    | Maria      | Sales       |
+| 452    | Mateo      | Support     |
+| 455    | Matthew    | Finance     |
+| 458    | Manuel     | Engineering |
+| 461    | Marisol    | HR          |
+| 465    | Marcus     | Support     |
+| 477    | Mateo      | Support     |
+| 478    | Manuel     | Sales       |
+| 480    | Mavis      | Support     |
+| 484    | Matthew    | Finance     |
+| 486    | Maria      | Sales       |
+| 488    | Marcus     | Sales       |
+| 497    | Mario      | Support     |
++--------+------------+-------------+
+112 row(s) in set
+
+-- Query 1.3a
+SELECT emp_code FROM employee WHERE emp_code LIKE 'E____';
+
++----------+
+| emp_code |
++----------+
+| E1003    |
+| E1032    |
+| E1041    |
+| E1080    |
+| E1084    |
+| E1087    |
+| E1151    |
+| E1154    |
+| E1186    |
+| E1188    |
+| E1227    |
+| E1229    |
+| E1231    |
+| E1252    |
+| E1271    |
+| E1300    |
+| E1332    |
+| E1335    |
+| E1376    |
+| E1382    |
+| E1387    |
+| E1405    |
+| E1415    |
+| E1419    |
+| E1422    |
+| E1445    |
+| E1465    |
+| E1471    |
+| E1483    |
+| E1542    |
+| E1550    |
+| E1559    |
+| E1611    |
+| E1614    |
+| E1622    |
+| E1681    |
+| E1731    |
+| E1741    |
+| E1789    |
+| E1800    |
+| E1841    |
+| E1919    |
+| E1921    |
+| E1938    |
+| E1944    |
+| E1955    |
+| E1990    |
+| E2030    |
+| E2042    |
+| E2047    |
+| E2053    |
+| E2131    |
+| E2138    |
+| E2198    |
+| E2203    |
+| E2250    |
+| E2288    |
+| E2322    |
+| E2352    |
+| E2360    |
+| E2379    |
+| E2383    |
+| E2401    |
+| E2439    |
+| E2465    |
+| E2469    |
+| E2485    |
+| E2510    |
+| E2525    |
+| E2537    |
+| E2549    |
+| E2579    |
+| E2580    |
+| E2583    |
+| E2606    |
+| E2611    |
+| E2650    |
+| E2662    |
+| E2680    |
+| E2681    |
+| E2719    |
+| E2737    |
+| E2738    |
+| E2741    |
+| E2759    |
+| E2797    |
+| E2814    |
+| E2844    |
+| E2907    |
+| E2911    |
+| E2925    |
+| E2930    |
+| E2937    |
+| E2951    |
+| E2956    |
+| E2967    |
+| E2979    |
+| E2981    |
+| E2988    |
+| E2999    |
+| E3004    |
+| E3010    |
+| E3015    |
+| E3019    |
+| E3051    |
+| E3059    |
+| E3069    |
+| E3072    |
+| E3090    |
+| E3113    |
+| E3115    |
+| E3149    |
+| E3172    |
+| E3195    |
+| E3209    |
+| E3217    |
+| E3256    |
+| E3260    |
+| E3271    |
+| E3308    |
+| E3324    |
+| E3333    |
+| E3350    |
+| E3371    |
+| E3381    |
+| E3397    |
+| E3419    |
+| E3433    |
+| E3455    |
+| E3471    |
+| E3519    |
+| E3521    |
+| E3526    |
+| E3529    |
+| E3535    |
+| E3568    |
+| E3589    |
+| E3593    |
+| E3623    |
+| E3627    |
+| E3644    |
+| E3656    |
+| E3657    |
+| E3685    |
+| E3758    |
+| E3797    |
+| E3799    |
+| E3806    |
+| E3827    |
+| E3840    |
+| E3862    |
+| E3895    |
+| E3899    |
+| E3937    |
+| E3942    |
+| E3989    |
+| E3999    |
+| E4005    |
+| E4039    |
+| E4047    |
+| E4067    |
+| E4078    |
+| E4088    |
+| E4091    |
+| E4109    |
+| E4188    |
+| E4202    |
+| E4219    |
+| E4222    |
+| E4234    |
+| E4257    |
+| E4274    |
+| E4292    |
+| E4318    |
+| E4391    |
+| E4444    |
+| E4487    |
+| E4511    |
+| E4513    |
+| E4532    |
+| E4542    |
+| E4547    |
+| E4557    |
+| E4583    |
+| E4597    |
+| E4607    |
+| E4634    |
+| E4652    |
+| E4658    |
+| E4678    |
+| E4703    |
+| E4739    |
+| E4750    |
+| E4790    |
+| E4809    |
+| E4822    |
+| E4838    |
+| E4853    |
+| E4920    |
+| E4931    |
+| E4978    |
+| E5047    |
+| E5060    |
+| E5065    |
+| E5112    |
+| E5120    |
+| E5121    |
+| E5177    |
+| E5196    |
+| E5211    |
+| E5237    |
+| E5240    |
+| E5261    |
+| E5273    |
+| E5283    |
+| E5301    |
+| E5316    |
+| E5319    |
+| E5320    |
+| E5322    |
+| E5342    |
+| E5345    |
+| E5346    |
+| E5365    |
+| E5384    |
+| E5392    |
+| E5393    |
+| E5399    |
+| E5407    |
+| E5469    |
+| E5486    |
+| E5518    |
+| E5534    |
+| E5535    |
+| E5595    |
+| E5610    |
+| E5678    |
+| E5706    |
+| E5712    |
+| E5713    |
+| E5744    |
+| E5752    |
+| E5762    |
+| E5768    |
+| E5782    |
+| E5786    |
+| E5799    |
+| E5823    |
+| E5828    |
+| E5838    |
+| E5865    |
+| E5899    |
+| E5939    |
+| E5951    |
+| E5958    |
+| E5975    |
+| E5995    |
+| E6013    |
+| E6025    |
+| E6040    |
+| E6062    |
+| E6077    |
+| E6085    |
+| E6112    |
+| E6114    |
+| E6135    |
+| E6137    |
+| E6139    |
+| E6148    |
+| E6154    |
+| E6155    |
+| E6156    |
+| E6160    |
+| E6178    |
+| E6188    |
+| E6201    |
+| E6224    |
+| E6234    |
+| E6243    |
+| E6287    |
+| E6324    |
+| E6337    |
+| E6341    |
+| E6345    |
+| E6370    |
+| E6389    |
+| E6413    |
+| E6415    |
+| E6434    |
+| E6435    |
+| E6465    |
+| E6511    |
+| E6577    |
+| E6582    |
+| E6611    |
+| E6630    |
+| E6637    |
+| E6654    |
+| E6685    |
+| E6696    |
+| E6698    |
+| E6710    |
+| E6736    |
+| E6739    |
+| E6762    |
+| E6766    |
+| E6790    |
+| E6800    |
+| E6807    |
+| E6827    |
+| E6832    |
+| E6836    |
+| E6837    |
+| E6843    |
+| E6852    |
+| E6853    |
+| E6876    |
+| E6883    |
+| E6897    |
+| E6956    |
+| E7029    |
+| E7043    |
+| E7064    |
+| E7107    |
+| E7130    |
+| E7136    |
+| E7139    |
+| E7160    |
+| E7166    |
+| E7179    |
+| E7235    |
+| E7245    |
+| E7252    |
+| E7278    |
+| E7293    |
+| E7367    |
+| E7374    |
+| E7376    |
+| E7379    |
+| E7389    |
+| E7396    |
+| E7443    |
+| E7502    |
+| E7508    |
+| E7523    |
+| E7533    |
+| E7538    |
+| E7539    |
+| E7585    |
+| E7587    |
+| E7603    |
+| E7622    |
+| E7684    |
+| E7690    |
+| E7712    |
+| E7726    |
+| E7738    |
+| E7744    |
+| E7750    |
+| E7784    |
+| E7791    |
+| E7804    |
+| E7811    |
+| E7826    |
+| E7844    |
+| E7846    |
+| E7880    |
+| E7891    |
+| E7897    |
+| E7917    |
+| E7924    |
+| E7959    |
+| E7969    |
+| E7970    |
+| E7975    |
+| E7981    |
+| E8035    |
+| E8066    |
+| E8087    |
+| E8095    |
+| E8104    |
+| E8114    |
+| E8144    |
+| E8155    |
+| E8183    |
+| E8226    |
+| E8236    |
+| E8281    |
+| E8284    |
+| E8362    |
+| E8367    |
+| E8375    |
+| E8392    |
+| E8402    |
+| E8420    |
+| E8440    |
+| E8470    |
+| E8471    |
+| E8484    |
+| E8494    |
+| E8496    |
+| E8498    |
+| E8507    |
+| E8517    |
+| E8524    |
+| E8554    |
+| E8580    |
+| E8585    |
+| E8600    |
+| E8644    |
+| E8645    |
+| E8662    |
+| E8690    |
+| E8701    |
+| E8709    |
+| E8749    |
+| E8767    |
+| E8772    |
+| E8799    |
+| E8845    |
+| E8846    |
+| E8850    |
+| E8851    |
+| E8864    |
+| E8897    |
+| E8898    |
+| E8927    |
+| E8939    |
+| E8943    |
+| E8955    |
+| E9020    |
+| E9032    |
+| E9042    |
+| E9045    |
+| E9060    |
+| E9080    |
+| E9107    |
+| E9145    |
+| E9152    |
+| E9166    |
+| E9171    |
+| E9212    |
+| E9223    |
+| E9233    |
+| E9269    |
+| E9294    |
+| E9296    |
+| E9300    |
+| E9318    |
+| E9333    |
+| E9335    |
+| E9362    |
+| E9376    |
+| E9385    |
+| E9404    |
+| E9414    |
+| E9422    |
+| E9437    |
+| E9440    |
+| E9457    |
+| E9463    |
+| E9468    |
+| E9486    |
+| E9502    |
+| E9508    |
+| E9513    |
+| E9520    |
+| E9527    |
+| E9562    |
+| E9567    |
+| E9572    |
+| E9595    |
+| E9596    |
+| E9638    |
+| E9682    |
+| E9718    |
+| E9732    |
+| E9739    |
+| E9804    |
+| E9815    |
+| E9820    |
+| E9830    |
+| E9832    |
+| E9866    |
+| E9869    |
+| E9882    |
+| E9895    |
+| E9925    |
+| E9930    |
+| E9931    |
+| E9939    |
+| E9942    |
+| E9953    |
+| E9955    |
+| E9957    |
+| E9967    |
+| E9970    |
+| E9975    |
+| E9980    |
+| E9991    |
++----------+
+500 row(s) in set
+
+-- Query 1.3b
+SELECT emp_code, first_name, last_name FROM employee WHERE emp_code LIKE 'E_0__';
+
++----------+------------+------------+
+| emp_code | first_name | last_name  |
++----------+------------+------------+
+| E9042    | Isabel     | Cruz       |
+| E1041    | John       | Navarro    |
+| E9032    | Leo        | Tolentino  |
+| E6062    | Jacob      | Morales    |
+| E7043    | Matthew    | Jimenez    |
+| E9045    | Vanessa    | Gutierrez  |
+| E8035    | Matthew    | Soriano    |
+| E6040    | Liam       | Mendoza    |
+| E8095    | Maricel    | Dela Cruz  |
+| E9020    | Olivia     | Pascual    |
+| E2053    | Emma       | Perez      |
+| E7064    | Oscar      | Perez      |
+| E1003    | Lucia      | Velasquez  |
+| E5060    | Oscar      | Castillo   |
+| E1084    | Liam       | Salazar    |
+| E9060    | Rico       | Rivera     |
+| E6013    | Bianca     | Tan        |
+| E4088    | Isabel     | Morales    |
+| E4047    | Helen      | Pascual    |
+| E4067    | Mario      | Lim        |
+| E1080    | Yna        | Salazar    |
+| E4039    | Hannah     | Navarro    |
+| E2047    | Walter     | Ramos      |
+| E2030    | Gabriel    | Morales    |
+| E6077    | Maricel    | Villanueva |
+| E3015    | Sara       | Aquino     |
+| E3004    | Noel       | Gutierrez  |
+| E3010    | Jacob      | Martinez   |
+| E3059    | John       | Cruz       |
+| E3069    | Hannah     | Ramirez    |
+| E3051    | John       | Gomez      |
+| E4005    | Carmen     | Tolentino  |
+| E4078    | Dennis     | Martinez   |
+| E1087    | Olivia     | Bautista   |
+| E6025    | Carmen     | Mendoza    |
+| E6085    | Lara       | Villanueva |
+| E4091    | Maria      | Ortiz      |
+| E1032    | Victor     | Domingo    |
+| E2042    | Liam       | Navarro    |
+| E7029    | Liam       | Mendoza    |
+| E5065    | Mavis      | Santos     |
+| E3072    | Marisol    | Mendoza    |
+| E5047    | Matthew    | Reyes      |
+| E8087    | Karen      | Chua       |
+| E9080    | Victor     | Morales    |
+| E3090    | Maria      | Rodriguez  |
+| E8066    | Olivia     | Chua       |
+| E3019    | Jose       | Martinez   |
++----------+------------+------------+
+48 row(s) in set
+
