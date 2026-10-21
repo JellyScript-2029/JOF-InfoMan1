@@ -1,0 +1,40 @@
+-- Query 2.1
+SELECT COUNT(*) AS total_employees, COUNT(commission) AS with_commission FROM employee;
+
++-----------------+-----------------+
+| total_employees | with_commission |
++-----------------+-----------------+
+| 500             | 352             |
++-----------------+-----------------+
+1 row(s) in set
+
+-- Query 2.2
+SELECT SUM(salary) AS total_payroll FROM employee;
+
++---------------+
+| total_payroll |
++---------------+
+| 33282250      |
++---------------+
+1 row(s) in set
+
+-- Query 2.3
+SELECT ROUND(AVG(salary), 2) AS avg_salary, MIN(hire_date) AS earliest_hire, MAX(hire_date) AS latest_hire FROM employee;
+
++------------+---------------+-------------+
+| avg_salary | earliest_hire | latest_hire |
++------------+---------------+-------------+
+| 66564.5    | 2015-01-03    | 2026-09-14  |
++------------+---------------+-------------+
+1 row(s) in set
+
+-- Query 2.4
+SELECT SUM(salary + COALESCE(commission, 0)) AS total_compensation FROM employee;
+
++--------------------+
+| total_compensation |
++--------------------+
+| 35387750           |
++--------------------+
+1 row(s) in set
+
