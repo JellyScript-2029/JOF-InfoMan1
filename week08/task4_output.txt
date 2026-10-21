@@ -1,0 +1,25 @@
+-- Query 4.1
+SELECT department, ROUND(AVG(salary), 2) AS avg_salary FROM employee GROUP BY department HAVING AVG(salary) > 66564.50;
+
++-------------+------------+
+| department  | avg_salary |
++-------------+------------+
+| Engineering | 75160.0    |
+| Finance     | 79513.04   |
+| Sales       | 71799.65   |
++-------------+------------+
+3 row(s) in set
+
+-- Query 4.2
+SELECT department, COUNT(*) AS headcount FROM employee WHERE status = 'Active' GROUP BY department HAVING COUNT(*) > 50;
+
++-------------+-----------+
+| department  | headcount |
++-------------+-----------+
+| Engineering | 104       |
+| Finance     | 52        |
+| Sales       | 116       |
+| Support     | 99        |
++-------------+-----------+
+4 row(s) in set
+
