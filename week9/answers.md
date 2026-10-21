@@ -1,8 +1,8 @@
 # INFOMAN1 — Week 9 Lab Answers
 
 Name: Jhelianne Figuerres
-Student ID: <YOUR_STUDENT_ID>
-GitHub repo: https://github.com/<STUDENT_GITHUB_USERNAME>/infoman1
+Student ID: 2510465
+GitHub repo: https://github.com/JellyScript-2029/JOF-InfoMan1.git
 Date submitted: October 21, 2026
 
 ## Task 1 — INNER JOIN Basics

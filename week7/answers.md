@@ -101,7 +101,7 @@ Without an alias, the column header is the whole expression, such as `DATEDIFF(d
 ## Task 4 — Comprehensive Data Audit
  
 **Approach / explanation:**
-I selected `course_code`, `course_name` and `credits` from `courses`. The `IS NULL` and `BETWEEN 4 AND 6` conditions are joined by OR and wrapped in parentheses, and that group is joined by AND with `course_code LIKE '%ADV%'`. This way every returned course must contain 'ADV' in its code and also have either a missing description or 4 to 6 credits. Results are sorted alphabetically with `ORDER BY course_name`.
+I selected `course_code`, `course_name` and `credits` from `courses`. The `IS NULL` and `BETWEEN 4 AND 6` conditions are joined by OR and wrapped in parentheses, and that group is joined by AND with `course_code LIKE '%ADV%'`. This way every returned course must contain 'ADV' in its code and also have either a missing description or 4 - 6 credits. Results are sorted alphabetically with `ORDER BY course_name`.
  
 **Code / query used (if applicable):**
 ```sql
